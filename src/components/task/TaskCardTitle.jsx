@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const TaskCardTitle = () => {
   const [isClick, setIsClick] = useState(false);
-  const [inputCardTitle, setinputCardTitle] = useState("Today");
+  const [inputCardTitle, setinputCardTitle] = useState("タイトル");
 
   const handleClick = () => {
     setIsClick(true);
