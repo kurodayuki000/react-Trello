@@ -21,7 +21,6 @@ const Task = ({task, taskList, setTaskList, index}) => {
           </button>
         </div>
       )}
-      
     </Draggable>
   )
 }
