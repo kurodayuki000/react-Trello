@@ -4,6 +4,10 @@
       padding: 0;
 }
 
+body {
+      background-color: rgb(207, 128, 0);
+}
+
 header {
       text-align: center; 
       padding: 4px 10%;
@@ -27,12 +31,17 @@ h1 {
 }
 
 .taskCard {
-      width: 250px;
+      width: 100%;
       padding: 10px 25px;
       margin: 10px 1%;
       background-color: rgb(288, 288, 288);
       border-radius: 5px;
-      
+}
+
+@media screen and (min-width: 576px) {
+      .taskCard {
+            width: 250px;
+      }
 }
 
 .taskCardTitleInputArea {
@@ -56,7 +65,7 @@ h1 {
       font-size: 1.3rem;
       padding: 10px 15px;
       border-radius: 3px;
-      border: none;
+      border: 0.5px solid #000;
       outline: none;
 }
 
@@ -73,6 +82,7 @@ h1 {
 
 .taskText {
       margin-left: 12px;
+      overflow-wrap: anywhere;
 }
 
 .taskTrashButton {
